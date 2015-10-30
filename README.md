@@ -41,3 +41,27 @@ gulp.task("default", ["hello"], function (){
 這樣一來`$gulp`便會直接跑`default`,在跑`default`之前，會先把陣列裡的`hello`跑過一遍。
 
 
+# concat
+
+當有一大坨js files的時候怎麼辦捏？全部放到`app.js`當中。
+
+```js
+gulp.task("concatScripts", function () {
+  gulp.src([
+    'js/jquery.js',
+    'js/sticky/jquery.sticky.js',
+    'js/main.js'])
+  .pipe(concat("app.js")) // 把上面的js file 串近 app.js
+  .pipe(gulp.dest("js")) //app.js 放到某個位置(js資料夾裡面)
+});
+```
+
+# minified JS code
+
+使用到外掛[The Gulp Uglify Module](https://github.com/terinjokes/gulp-uglify)來壓縮，[The Gulp Rename Module](https://github.com/hparra/gulp-rename)來重新命名檔案。
+
+
+
+
+
+
