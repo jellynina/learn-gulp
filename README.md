@@ -77,4 +77,9 @@ gulp.task("concatScripts", function () {
 Treehouse blog on using sourcemaps: http://blog.teamtreehouse.com/introduction-source-maps
 
 
+# Task 一起跑跑
+
+
+用`gulp.task("build")`把任務串起來，但是因為有一些任務有相依性，所以輸出都要加`return`
+
 
