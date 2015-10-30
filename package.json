@@ -1,0 +1,22 @@
+{
+  "name": "learn-gulp",
+  "version": "1.0.0",
+  "description": "ikea learn how to use gulp as task runner",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jellynina/learn-gulp.git"
+  },
+  "author": "jellynina",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jellynina/learn-gulp/issues"
+  },
+  "homepage": "https://github.com/jellynina/learn-gulp#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
+}
