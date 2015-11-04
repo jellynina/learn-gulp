@@ -114,7 +114,7 @@ gulp.task('clean', function(){
 * [Use Gulp to serve your app in development with browser sync](http://www.browsersync.io/docs/gulp/)
 * [Use Gulp to compile Jade Templates](https://github.com/jadejs/jade)
 * [Gulp Advanced Example on Github](https://github.com/hdngr/advanced-gulp-example)
-* [All about yeoman and bower]()
+* [All about yeoman and bower](http://yeoman.io)
 
 > 可以好好study [Gulp Advanced](https://github.com/hdngr/advanced-gulp-example)
 
