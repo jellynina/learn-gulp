@@ -83,3 +83,45 @@ Treehouse blog on using sourcemaps: http://blog.teamtreehouse.com/introduction-s
 用`gulp.task("build")`把任務串起來，但是因為有一些任務有相依性，所以輸出都要加`return`
 
 
+# Watch Method
+
+* Async tasks in gulp, from the gulp docs: https://github.com/gulpjs/gulp/blob/master/docs/API.md#async-task-support
+* Gulp uses the globbing pattern defined in the popular node-glob module. Find advanced patterns in the docs here: [Gulp Globbing Documentation](https://github.com/isaacs/node-glob)
+
+```js
+gulp.task('watchSass', function (){
+  gulp.watch('scss/**/*.scss', ['compileSass']);
+});
+```
+
+`scss`資料夾底下的`.scss`有更動之後，重跑`compileSass`這個任務。
+
+
+
+# 檔案匯出build
+
+把要上傳到server的檔案放到`dist`資料夾中，但在這之前需要加一個`clean`的功能。
+
+```js
+gulp.task('clean', function(){
+  del(['dist','css/application.css*','js/app.*.js*' ]);
+})
+```
+
+# gulp Workflow
+
+* [Use Gulp to inject text into a file](https://github.com/klei/gulp-inject), for instance, inject file names of static into an HTML file.
+* [Use Gulp to serve your app in development with browser sync](http://www.browsersync.io/docs/gulp/)
+* [Use Gulp to compile Jade Templates](https://github.com/jadejs/jade)
+* [Gulp Advanced Example on Github](https://github.com/hdngr/advanced-gulp-example)
+* [All about yeoman and bower]()
+
+> 可以好好study [Gulp Advanced](https://github.com/hdngr/advanced-gulp-example)
+
+## 怎麼去看`gulpfile`
+
+從最後一個`task`往上看。
+
+
+
+
